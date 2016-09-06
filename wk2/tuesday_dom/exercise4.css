@@ -1,0 +1,13 @@
+.big-box {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.small-box {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
