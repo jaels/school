@@ -9,5 +9,7 @@
     position: absolute;
     height: 50px;
     width: 50px;
+    left: 70px;
+    top: 70px;
     background-color: yellow;
 }
