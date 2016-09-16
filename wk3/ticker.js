@@ -1,28 +1,37 @@
 
 var headlines = document.getElementsByClassName('list');
 var container = document.getElementById('container');
-var moveLeft = 1000;
-
+var moveLeft = 0;
+var width;
+var play;
 function moveHeadLines() {
 
-   moveLeft = moveLeft - 2;
     container.style.left = moveLeft + "px";
 
+    moveLeft = moveLeft - 2;
 
 
+    width = headlines[0].offsetWidth;
 
-    if (headlines[0].style.left <= 0 + "px") {
-       var firstChild = container.childNodes[0];
-       console.log(firstChild);
-        container.removeChild(firstChild);
-       container.appendChild(firstChild);
+    if(container.offsetLeft<= -width){
+        container.appendChild(headlines[0]);
+        moveLeft+=width + 2;
+        container.style.left = moveLeft + "px";
+
     }
 
 
-
-window.requestAnimationFrame(moveHeadLines);
-
-
+    play=window.requestAnimationFrame(moveHeadLines);
 }
 
-window.requestAnimationFrame(moveHeadLines);
+container.addEventListener('mouseover', function() {
+    cancelAnimationFrame(play);
+
+});
+
+container.addEventListener('mouseout', function() {
+    play=window.requestAnimationFrame(moveHeadLines);
+});
+
+
+play = window.requestAnimationFrame(moveHeadLines);
