@@ -1,0 +1,37 @@
+
+body {
+font-family: impact;
+
+}
+
+
+.name {
+    color: red;
+}
+
+.photo {
+    height: 236px;
+    width: 200px;
+    float: right;
+    margin-right: 220px;
+    margin-top: 20px;
+}
+
+.name {
+    color: 	#A52A2A;
+    font-size: 30px;
+}
+
+.text {
+    font-size: 28px;
+float: left;
+}
+
+.author {
+    position: relative;
+    display: inline-block;
+    width: 1000px;
+    background-color: #8FBC8F;
+    margin-top: 20px;
+
+}
