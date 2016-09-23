@@ -22,13 +22,7 @@
             data: {
                 type: 'all'
             },
-            headers: {
-                Authorization: 'Basic ' + btoa('jaels:sarusi1979')
-            },
             success: function(data) {
-
-
-
                 var obj;
                 var newArr = [];
                 var commitsArr = [];
@@ -68,9 +62,6 @@
                         method: 'GET',
                         data: {
                             type: 'all'
-                        },
-                        headers: {
-                            Authorization: 'Basic ' + btoa('jaels:sarusi1979')
                         },
                         success: function(data1) {
                             if (data1.length>10) {number=10;}
