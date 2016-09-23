@@ -1,0 +1,107 @@
+body {
+    background-color: grey;
+    font-family: arial;
+}
+
+h1 {
+    font-family: arial;
+}
+
+#header {
+    position: relative;
+    top: 30px;
+}
+
+#search-area {
+width: 300px;
+position: relative;
+left:0%;
+top: 28px;
+display: inline-block;
+}
+
+#typing-field {
+    border: 1px solid black;
+    font-size: 14px;
+    height: 18px;
+    width: 230px;
+}
+
+
+#go-button {
+float: right;
+position: relative;
+left: 0%;
+bottom: 0px;
+background-color: #D3D3D3;
+border-radius: 20px 20px 20px 20px;
+color: black;
+height: 18px;
+width: 50px;
+text-align: center;
+display: inline-block;
+border: 1px solid black;
+cursor: pointer;
+}
+
+
+#go-text {
+position: relative;
+bottom: 12px;
+font-size: 14px;
+}
+
+
+
+
+.result {
+position: relative;
+margin-top:80px;
+width: 400px;
+padding-left: 30px;
+text-decoration: none;
+
+}
+
+.elem {
+    overflow: hidden;
+    min-height: 100px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.images {
+    position: relative;
+    float:left;
+    height:100px;
+    width:100px;
+}
+
+.fullRepoName {
+    float:right;
+    position: relative;
+    color: black;
+    cursor: pointer;
+    overflow: scroll;
+
+}
+
+.commits {
+    position:relative;
+    width: 100%;
+
+
+
+}
+
+ul {
+    margin-bottom: 20px;
+}

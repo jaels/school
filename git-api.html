@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="git-api.css">
+    <title>GitHub-API</title>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>GitHub Search</h1>
+    </div>
+    <div id="search-area">
+        <input placeholder = "username" id="typing-field"></input>
+
+        <div id="go-button">
+            <p id="go-text">Go</p>
+        </div>
+    </div>
+
+    <div id=results>
+        <script id="resultsScript" type="text/handlebars">
+        {{#newArr}}
+        <div class="result"  id = "{{id}}">
+        <div class="elem">
+        <img class="images" src={{pic}}>
+        <p  class="fullRepoName">{{fullRepoName}}</p>
+        </div>
+        </div>
+        {{/newArr}}
+        </script>
+
+        <script id="commitsScript" type="text/handlebars">
+        {{#commitsArr}}
+        <div class="commits">
+        <ul>
+        <li>{{message}}</li>
+        </ul>
+        </div>
+        {{/commitsArr}}
+
+        </script>
+
+
+
+    </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<script src="git-api.js"></script>
+
+
+</body>
+
+</html>
